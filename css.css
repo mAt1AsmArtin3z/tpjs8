@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-family:sans-serif;
+    background-color: rgb(47, 79, 79);
+    background-image: url(zoo);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.caja0{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(124, 165, 163);
+    animation: encender-apagar 1s infinite alternate;
+}
+
+@keyframes encender-apagar {
+  0% {
+    box-shadow: 5px 5px 60px 20px rgba(124, 165, 163, 0.8);
+  }
+  50% {
+    box-shadow: none5px 5px 60px 20px rgba(70, 84, 82, 0.8);
+  }
+  100% {
+    box-shadow: 5px 5px 60px 20px rgba(40, 52, 52, 0.8);
+  }
+}
+
+h3{
+  text-align: center;
+}
+
+.caja{
+width: 100%;
+height: 250px;
+justify-content: center;
+display: flex;
+background-size: cover;
+background-position: center;
+color: transparent;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid rgb(24, 30, 56);
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(124, 165, 163);
+    color: rgb(24, 30, 56);
+    font-size: 20px;
+}
+
+.text-gradient{
+  background-image: linear-gradient(to left,#eb2c06, orange, #c80bf8, rgb(199, 199, 16), #c80bf8, red);
+  background-clip: text;  
+  color: transparent;
+  font-size: 50px;
+  background-size: 500%;
+  animation: color 3s linear infinite alternate;
+}
+
+@keyframes color {
+  from {
+      background-position: 0% 50%;
+  }
+
+  to {
+      background-position: 100% 50%;
+  }
+}
